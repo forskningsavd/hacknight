@@ -40,6 +40,7 @@ h1 { font-size: 6em; }
  {
 	list-style-type: none;
 	margin: 0;
+	padding: 0;
 }
 strong {
 	padding: 4px 6px;
