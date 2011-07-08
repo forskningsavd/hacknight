@@ -113,4 +113,8 @@ dd {
 .details { font-style: italic; }
 .details a { font-size:80%;}
 p {font-size: 2em;}
-
+.celebrate {
+  padding-left: 1em;
+  border-left: 5px solid #F9FDEE;
+  border-radius: 5px;
+}
