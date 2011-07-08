@@ -33,12 +33,29 @@ h1 { font-size: 6em; }
   bottom: 20px;
   right: 20px;
   width: 145px;
-  background: #266641;
-  background: #1a1a1a;
   font-weight: normal;
   padding: 1em;
   border-radius: 40px;
-  border: 15px solid #ffcc00;
+  border: 15px solid;
+  background: rgba(26, 26, 26, 0.2);
+  border-color: rgba(255, 204, 0, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+}
+#menu:hover {
+  background: rgba(26, 26, 26, 1.0);
+  border-color: rgba(255, 204, 0, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+}
+#menu a {
+  color: rgba(249, 253, 238, 0.2);
+}
+#menu:hover a {
+  color: rgba(249, 253, 238, 1.0);
+}
+#menu li:hover {
+	background: #266641;
+	background: #c50000;
+	cursor: pointer;
 }
 #menu ul,
 #menu ul li
@@ -52,14 +69,6 @@ strong {
 	background: #266641;
 }
 
-#menu a {
-  color: #F9FDEE;
-}
-#menu li:hover {
-	background: #266641;
-	background: #c50000;
-	cursor: pointer;
-}
 .menusection li {
 	font-size: 1.7em;
 }
