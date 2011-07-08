@@ -34,7 +34,7 @@ h1 { font-size: 6em; }
   right: 20px;
   width: 145px;
   font-weight: normal;
-  padding: 1em;
+  padding: 1.2em 0;
   border-radius: 40px;
   border: 15px solid;
   background: rgba(26, 26, 26, 0.2);
@@ -47,6 +47,7 @@ h1 { font-size: 6em; }
   color: rgba(255, 255, 255, 1.0);
 }
 #menu a {
+  padding: 1em;
   color: rgba(249, 253, 238, 0.2);
 }
 #menu:hover a {
