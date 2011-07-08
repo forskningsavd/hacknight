@@ -25,7 +25,7 @@ h1 { font-size: 6em; }
   }
 #menu {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   width: 200px;
   background: yellow;
@@ -35,6 +35,9 @@ h1 { font-size: 6em; }
 }	
 #menu a {
   color: #F9FDEE;
+}
+.menusection li {
+	font-size: 1.7em;
 }
   h1 {
     padding-left: 5px;
