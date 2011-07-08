@@ -28,10 +28,11 @@ h1 { font-size: 6em; }
   bottom: 20px;
   right: 20px;
   width: 200px;
-  background: yellow;
   background: #266641;
   font-weight: normal;
   padding: 1em;
+  border-radius: 40px;
+  border: 15px solid #ffcc00;
 }	
 #menu a {
   color: #F9FDEE;
