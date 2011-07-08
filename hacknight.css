@@ -33,7 +33,12 @@ h1 { font-size: 6em; }
   padding: 1em;
   border-radius: 40px;
   border: 15px solid #ffcc00;
-}	
+}
+strong {
+	padding: 4px 6px;
+	background: #266641;
+}
+
 #menu a {
   color: #F9FDEE;
 }
