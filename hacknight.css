@@ -27,12 +27,19 @@ h1 { font-size: 6em; }
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 200px;
+  width: 145px;
   background: #266641;
+  background: #1a1a1a;
   font-weight: normal;
   padding: 1em;
   border-radius: 40px;
   border: 15px solid #ffcc00;
+}
+#menu ul,
+#menu ul li
+ {
+	list-style-type: none;
+	margin: 0;
 }
 strong {
 	padding: 4px 6px;
@@ -41,6 +48,11 @@ strong {
 
 #menu a {
   color: #F9FDEE;
+}
+#menu li:hover {
+	background: #266641;
+	background: #c50000;
+	cursor: pointer;
 }
 .menusection li {
 	font-size: 1.7em;
