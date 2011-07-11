@@ -46,7 +46,7 @@ strong {
   color: rgba(255, 255, 255, 1.0);
 }
 #menu a {
-  padding: 1em;
+  padding: 0 1em;
   color: rgba(249, 253, 238, 0.2);
 }
 #menu:hover a {
