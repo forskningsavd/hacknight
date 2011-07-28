@@ -12,4 +12,8 @@ $(function() {
         */
         event.preventDefault();
     });
+    $(".expandme").click(function(e) {
+        $(this).hide("fast").next(".expandable").show("slow");
+
+    });
 });

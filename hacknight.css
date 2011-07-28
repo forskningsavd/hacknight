@@ -118,3 +118,13 @@ p {font-size: 2em;}
   border-left: 5px solid #F9FDEE;
   border-radius: 5px;
 }
+.expandme {
+  font-size:90%;
+  color: #F32744;
+  cursor: pointer;
+  text-align: center;
+}
+.expandable {
+  display: none;
+}
+
