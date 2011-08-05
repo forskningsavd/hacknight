@@ -1,4 +1,5 @@
 <?php
+// @note this is a quick'n dirty hack
 
 if (is_readable('config.php')) {
   require 'config.php';
@@ -8,10 +9,9 @@ if (is_readable('config.php')) {
 require_once 'Cache/Lite.php';
 $options = array(
     'cacheDir' => sys_get_temp_dir().'/',
-    'lifeTime' => 3600
+    'lifeTime' => 120
 );
 $Cache_Lite = new Cache_Lite($options);
-
 
 function getcached( $url )
 {
@@ -24,7 +24,7 @@ function getcached( $url )
     }
     $extra_head =  <<<EOFSTR
       <head>
-        <title>PADDAN</title>
+        <title>Hacknight <3 Schedule</title>
         <link rel="stylesheet" href="http://hacknight.se/hacknight.css" content-type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css"> 
         <link href="http://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"> 
@@ -41,15 +41,4 @@ EOFSTR;
   }
   return $data;
 }
-
-function on_get( $params = array() )
-{
-  //@todo fix this as a config variable or something!
-  $url = PAD_URL;
-
-  $content = getcached($url);
-
-  return $content;
-}
-
-echo on_get($_GET);
+echo getcached(PAD_URL);
