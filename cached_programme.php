@@ -24,13 +24,14 @@ function getcached( $url )
     }
     $extra_head =  <<<EOFSTR
       <head>
-        <title>Hacknight <3 Schedule</title>
+        <title>Hacknight &lt;3 Programme</title>
         <link rel="stylesheet" href="http://hacknight.se/hacknight.css" content-type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css"> 
         <link href="http://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"> 
         <link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css">
 EOFSTR;
     if ( ! empty($data) ) {
+      $data = str_replace('<title>/hn2011programme</title>', '', $data);
       $data = str_replace('<head>', $extra_head, $data);
       $data = str_replace('<body>','<body><div id="wrapper"><div class="column" style="width:100%"><div class="inner">',$data);
       $data = str_replace('</body>','</div></div></div></body>',$data);
