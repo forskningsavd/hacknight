@@ -1,5 +1,10 @@
 <?php
 
+if (is_readable('config.php')) {
+  require 'config.php';
+} else {
+  die('unable to read config file');
+}
 require_once 'Cache/Lite.php';
 $options = array(
     'cacheDir' => sys_get_temp_dir().'/',
@@ -14,7 +19,9 @@ function getcached( $url )
   $id = base64_encode($url);
   if ( ! ($data = $Cache_Lite->get($id)) ) {
     //shell_exec("echo 'cacheing {$url}' >> /tmp/pad.log");
-    $data = file_get_contents($url);
+    if ( ! $data = @file_get_contents($url) ) {
+      die('unable to cache the programe...');
+    }
     $extra_head =  <<<EOFSTR
       <head>
         <title>PADDAN</title>
@@ -38,8 +45,7 @@ EOFSTR;
 function on_get( $params = array() )
 {
   //@todo fix this as a config variable or something!
-  $url = 'http://a.pad.url';
-}
+  $url = PAD_URL;
 
   $content = getcached($url);
 
