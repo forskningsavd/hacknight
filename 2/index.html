@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" value="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("jquery","1.4.2");
+      </script>
+      <script type="text/javascript">
+        $(function(){
+            $(".s").each(function(){
+              $(this).css('display','none');
+              });
+            $("dd").not(".s").click(function(){
+              $(this).next().toggle();
+              });
+            $(".infotoggler").click(function() {
+              $('dd.s').toggle();
+              });
+            });
+</script>
+<title>Hacknight #2 - Days of Love, Nights of Hack - June 19 2010 </title>
+
+<link rel="icon" href="favicon.ico" type="image/icon"/>
+<style type="text/css">
+  body {
+    font-family: sans-serif;
+    color: #c0c0c0;
+    background: #111;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding-left: 5px;
+  }
+  h1 a img {
+	border:0;
+	}
+  h2 {
+    font-size: small;
+    padding-left: 10px;
+  }
+  h3 {
+	text-shadow: 0 0 5px white;
+  }
+  h3.timestamp { padding-left:10px; }
+
+  .column {
+    float: left;
+    width: 33%;
+  }
+  .inner {
+    padding: 10px;
+  }
+
+  dt {
+    float: left;
+    clear: left; 
+  }
+  dd {
+    color: #fff;
+    margin-left: 50px;
+    cursor: pointer; }
+  .s {
+    font-size: small;
+    cursor: default;
+    color: #c0c0c0;
+    /*display: none; */
+  } 
+  .h { color: #00CEE1; }
+
+  .details { font-style: italic; }
+  .details a { font-size:80%;}
+</style>
+
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <h3><a href="http://forskningsavd.se/">Forskningsavdelningen</a> <a>presents</a></h3>
+      <h1><a href="http://www.facebook.com/event.php?eid=110857908958406&ref=ts" title="Facebook event"><img src="hacknight.jpg" alt="Hacknight #2"/></a></h1>
+
+      <h3 class="timestamp"><a>19 jun, 2010 @ </a><a 
+href="http://www.openstreetmap.org/?minlon=13.0303936004639&minlat=55.5982284545898&maxlon=13.0305948257446&maxlat=55.5984306335449">Industrigatan 20, 
+Malmö, Sweden</a><br>
+	<a>Doors will be open from 1337 hours</h3>
+	</a>
+      <div class="column">
+        <div class="inner">
+          <h3>Post-event Documentation</h3>
+          <p><b>Call for blog-posts</b>: Did you blog about Hacknight #2? Please tell us! .</p>
+  
+
+	<h3>About</h3>
+          <p>
+            Hacknight #2 was a free one-day creative tech conference in Malmö, Sweden on June 19, 2010.
+          </p>
+
+          <p>
+
+            Local hackerspace <a href="http://forskningsavd.se">Forskningsavdelningen</a> invites you to enjoy tech culture unfolding. Hands-on 
+workshops and a captivating speaker track  will cultivate and realize ideas. Network  with participants from all over the scene.
+          </p>
+          <p>
+            A large, industrial house plays host to the hordes of interested tech heads. For the duration of the conference, the hackerspace is 
+extended to encompass the whole building. 
+          </p>
+          <p>
+	    Doors will be open from 13.37 and talks begin at 17.00 and are in 1hr slots.  Workshops will have introductions before they start and then continue at one of the workshop locations for a limited or unlimited (until hacknight is over) time.
+          </p>
+          <p>
+            Go and tell your friends! <a href="http://hacknight.se/">hacknight.se</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+
+        <div class="inner">
+          <h3>Talks</h3>
+          <p class="infotoggler"><a href="#" onclick="return false;" title="Click to open or close all information on talks and workshops">Toggle talk details</a></p>
+          <dl>
+            <dt>18.00</dt>
+            <dd>Crypto Activism</dd>
+            <dd class="s">To secure communications and to prevent surveillance, internauts use different methods of encryption and anonymizing 
+proxies.<br /><br />
+
+            Recent wiretapping and copyright legislation have led to  such technologies becoming more popular and easier to use, sometimes giving rise 
+to autonomous darknets which are, in some respect, outside the reach of legal authorities.<br /><br />
+            This talk will discuss the politics of computer networks in general, and crypto-activism in particular.<br /><br />
+            by <a href="http://christopherkullenberg.se/" class="h">Christopher Kullenberg</a>, <a href="http://telecomix.org/">Telecomix</a><br /><br 
+/></dd>
+
+            <dt>19.00</dt>
+            <dd>The Pirate Bay</dd>
+
+            <dd class="s">Talk about <a href="http://thepiratebay.org/">The Pirate Bay</a>.<br \><br \>
+            by <a href="http://brokep.com/" class="h">Peter Sunde</a><br /><br /></dd>
+
+            <dt>20.00</dt>
+            <dd>Netbased commons</dd>
+            <dd class="s">What is required for spaces to be called common places? Commons on the net is always dependent, forming and being formed by 
+physical spaces. What exactly are the requirements of netbased commons, how are they created and what do they do?<br \><br \>
+
+            by <span class="h">Samira Ariadad</a>, <a href="http://www.tidningenbrand.se/">Brand</a><br /><br />
+            </dd>
+
+            <dt>21.00</dt>
+            <dd>Mandos</dd>
+            <dd class="s">Mandos - Encrypted file systems now practical for servers.<br /><br />
+
+            This will present <a href="http://wiki.fukt.bsnet.se/wiki/Mandos" title="Mandos' homepage">the Mandos system</a>, which allows computers to have encrypted root file systems and at the same time be capable of remote 
+and/or unattended reboots.  We will begin with a general introduction about why and how to use encrypted file systems.<br /><br />
+            by <span class="h">Teddy Hogeborn</span><br /><br />
+            </dd>
+
+            <dt>22.00</dt>
+            <dd>Blackthrows</dd>
+            <dd class="s">Presenting the <a href="http://cryptoanarchy.org/wiki/Blackthrow">Blackthrow technology</a> and how to deploy cipherspace 
+nodes in existing infrastructure.<br /><br />
+
+            The blackthrow can be used to create secure and completely decentralized (owner-free) channels of communication to be used in situations 
+where freedom of speech is critical, and in situations where it is impossible to interact with the ordinary Internets without having a traceable 
+origin. Example scenarios are during war-time, in regimes that throttle the Internet connectivity (Iran, China).<br /><br />
+            Usage of blackthrows, or similar technology, is however definitely not limited to these circumstances. Everyone has the right to 
+communicate freely, without corporations and authorities surveilling our correspondence.<br /><br /> 
+            by <span class="h">Kim Christensen</a><br /><br /></dd>
+          </dl>
+        </div>
+
+
+       <h3>Buy a t-shirt</h3>
+       <p>It will be possible during Hacknight to buy a very exclusive Forskningsavdelningen t-shirt. Get the t-shirt and be the coolest cat on the block. Only 
+150 SEK.	
+       </p>
+
+	<h3>Voices about Hacknight</h3>
+	<p class="details">A great big fanks to @forskningsavd  for last nights #hacknight, legendary amount of #datalove <a href="http://twitter.com/mickejamtsved/status/16611736032">/jamtsved</a></p>
+	<ul>
+  		<li><a href="http://christopherkullenberg.se/?p=1560">chrisk blogged about the event</a></li>
+     		<li><a href="http://www.flickr.com/photos/dcuartielles/sets/72157624180129639/">dcuartielles took photos</a></li>
+		<li><a href="http://blog.jamtsved.se/ogonblicksbild-fran-hacknight/">jamtsved blogged, too</a></li>
+    		<li><a href="http://blog.faidros.net/2010/06/bilder-fran-hacknight.html">Faidros took pictures</a></li>
+		<li><a href="http://stuge.se/usb.html/">Stuge's USB bonus talk</a>, or for <a href="http://stuge.se/usb.html.zip">archived offline viewing</a></li>
+
+	</ul>
+      </div>
+
+
+
+
+      <div class="column">
+
+        <div class="inner">
+          <h3>Workshops</h3>
+          <dl>
+            <dd>Lockpicking</dd>
+            <dd class="s">The Lockpicking seminar and workshop. will cover the basics concerning how a lock works, what tools to use and how to use 
+them and most importantly, you will learn how to properly protect yourself using the right kind of locks. There will be locks, lockpicks and plenty of 
+nice people to show you how.<br /><br />
+            by <span class="h">phyx</span>, Gothenburg Hackerspace<br /><br /></dd>
+
+            <dd>All you can 1337</dd>
+            <dd class="s">There is a table. <br>There is also piles of garbage, filled with left over components, half-done electronics projects from 
+students, weird casings and one or two toys. All for your l00ting pleasure.<br /><br />
+            We pour all of this over the table and and floor and indulge in free form hacking.<br /><br />
+            We arrange a speed hack where you get 5 seconds to gather stuff and then a time frame within to build from that.<br /><br />
+            We bathe in electronic junk.<br /><br />
+            We arrange an exhibition with the most beuatiful and monstrous creations.<br /><br />
+
+            by <strike><span class="h">Magnus Svartfax</span>, Gothenburg Hackerspace</strike><br /><br /></dd>
+            <dd>Beyond bleep-blop</dd>
+            <dd class="s">C64 as music monster: a workshop in music-making with the popular home computer<br /><br />
+            Max number of participants: 10.<br />
+            You need to know: nothing.<br />
+
+            Bring: A computer with <a href="http://www.viceteam.org/">VICE</a> or a C64.<br />
+            A limited number of C64s will be available.<br /><br />
+            <a href="http://spreadsheets.google.com/embeddedform?formkey=dENsVVBYM1dnQUhIazhhZDY4RzkxV2c6MQ">Sign up to reserve one of the 10 
+seats!</a><br /><br />
+            by <span class="h">Goto80</span> and <span class="h">Glenn Again</span><br /><br />
+
+            <dd>Retro Computing Corner</dd>
+            <dd class="s">A bunch of archaeological findings will be present for your pleasure for you to play with, poke and look at. Amongst others 
+ABC80, Atari, Amiga and Commodore systems.<br /><br /></dd>
+            <dd>PGP Key signing party</dd>
+            <dd class="s">There will be one for sure!(<a href="http://en.wikipedia.org/wiki/Key_signing_party">what is this?</a>)<br /><br /></dd>
+
+            <dd>Begin blogging with Wordpress</dd>
+
+            <dd class="s">Anna F will teach you how to setup and use Wordpress. Good tactical advice. <a 
+href="http://forskningsavd.se/2010/06/15/hacknight-workshop-begin-blogging/">Read more about the workshop here!</a><br /><br />by <span class="h">Anna F</span></dd>
+
+
+            <dd>More..</dd>
+            <dd class="s">TBA<br /><br /></dd>
+          </dl>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
